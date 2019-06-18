@@ -10,7 +10,7 @@ class App < Sinatra::Base
     end
 
   post '/checkout' do
-  
+
     session[params.keys[0]] = params.values[0]
 
     @session = session
